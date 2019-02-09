@@ -176,7 +176,7 @@ body {
   color: white;
 }
 
-.zones__wrapper {
+.wrapper__zones {
   max-width: 900px;
   margin: 0 auto;
 }
@@ -216,7 +216,7 @@ body {
   margin-top: 50px;
 }
 
-.zones--two {
+.zones--bottom {
   width: 550px;
   margin: 0 auto;
 }
