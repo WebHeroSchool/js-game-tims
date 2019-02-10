@@ -109,7 +109,7 @@
       setTimeout(()=> this.speedLevelElement.innerHTML = this.speedLevel, 600);
       this.setAnimationToStar()
     }
-    
+
     setMoreSpeed(num) {
       this.speed = this.speed - num;
       this.setNewLevel();
@@ -150,5 +150,5 @@
   // начало игры
   buttonStart.addEventListener('click', onStartButtonClick);
 
-  console.log(increaseChanceOf());
+ 
 }());
