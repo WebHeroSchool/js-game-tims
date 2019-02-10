@@ -109,9 +109,21 @@
       setTimeout(()=> this.speedLevelElement.innerHTML = this.speedLevel, 600);
       this.setAnimationToStar()
     }
+    
     setMoreSpeed(num) {
       this.speed = this.speed - num;
       this.setNewLevel();
+    }
+
+    gameOver() {
+      this.pointsElementFinal.innerHTML = this.points;
+      this.gameOverModal.classList.add('modal__window--show');
+      this.closeGameOver.addEventListener('click', () => {
+        this.gameOverModal.classList.remove('modal__window--show');
+        this.setStartPoints();
+        this.speedLevelElement.innerHTML = "1";
+        buttonStart.addEventListener('click', onStartButtonClick);
+      })
     }
 
   }
