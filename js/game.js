@@ -102,6 +102,18 @@
       this.setAllLifes(); 
       this.setStartPoints();
     }
+
+    setNewLevel() {
+      this.speedLevel += 1;
+      this.speedLevelElement.innerHTML = "";
+      setTimeout(()=> this.speedLevelElement.innerHTML = this.speedLevel, 600);
+      this.setAnimationToStar()
+    }
+    setMoreSpeed(num) {
+      this.speed = this.speed - num;
+      this.setNewLevel();
+    }
+
   }
   
   // открытие, закрытие правил игры
