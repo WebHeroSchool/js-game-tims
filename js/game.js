@@ -87,6 +87,7 @@
     emojeClickHandler(evt) {
       evt.target.classList.add('disappearing');
       if (evt.target.innerHTML === '🐭') {
+        console.log('Я поймал мышь');
         this.setPlusPoints(10);
         if (this.points % 50 === 0) {
           this.setMoreSpeed(200);
@@ -94,7 +95,6 @@
       } else {
           this.setRemoveLife();
       }
-      console.log('Я поймал мышь');
     }
     
     startGame() {
